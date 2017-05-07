@@ -1,14 +1,27 @@
 body{
 	background: url(../images/login-bg.jpg) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 }
 .login{
 	width: 600px;
-	height: 700px;
+	/* height: 700px; */
+	height: 650px;
 	margin: 94px auto;
 	padding: 84px 90px;
 	background-color: rgba(0,0,0,.6);
+	/* -webkit-box-reflect:below 0 linear-gradient(to bottom,transparent, rgba(0,0,0,.4)); */
+	-webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 60%,rgba(0,0,0,.4));
 }
+/* #moz-reflect:after{
+	content: "";
+	display: block;
+	background: -moz-element(#moz-reflect);
+	width: 650px;
+	height: 206px;
+	-moz-transform:rotateX(180deg);
+	transform-origin: 0 368px;
+	-moz-transform-origin: 0 368px;
+} */
 .login .logo{
 	width: 420px;
 	height: 172px;

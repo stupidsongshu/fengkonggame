@@ -3,6 +3,8 @@
 	height: 70px;
 	color:#fff;
 	background-image: url(../images/topnav.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 .header .box{
 	position: relative;
@@ -70,7 +72,7 @@
 	line-height: 62px;
 	color: #fff;
 	font-size: 24px;
-	border-radius: 5px;
+	border-radius: 6px;
 	border: none;
 	outline: none;
 	background-image: url(../images/btn-shape.png);
@@ -80,9 +82,10 @@
 	position: relative;
 	width: 100%;
 	height: 488px;
-	margin-top: -54px;
+	margin-top: -74px;
 	background-image: url(../images/introduction-game-bg.png);
 	background-repeat: no-repeat;
+	background-size: 100%;
 	z-index: 2;
 }
 .introduction-game .box{
@@ -220,6 +223,7 @@
 	line-height: 60px;
 	text-align: center;
 	background: url(../images/bg-copy.png) no-repeat;
+	background-size: 100%;
 	font-size: 18px;
 	color: #fff;
 }
