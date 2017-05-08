@@ -58,15 +58,24 @@
 .content .box .pull-left-l li.active{
 	background-color: rgba(0,0,0,.6);
 }
-.content .box .pull-left-l li.active:before{
+.content .box .pull-left-l .item .item-t{
+	position: relative;
+}
+.content .box .pull-left-l li.active .item-t:before{
 	content: "";
-	display: inline-block;
+	position: absolute;
 	width: 22px;
 	height: 24px;
-	margin-right: 18px;
+	left: -40px;
+	top: 0;
 	background: url(../images/icon-arrow-r.png) no-repeat;
 	vertical-align: -4px;
 }
+
+
+
+
+
 
 .content .box .pull-left-m{
 	width: 580px;
