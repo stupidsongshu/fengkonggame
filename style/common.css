@@ -1,4 +1,4 @@
-ul,p,h1,h2,h3,h4,h5,h6,dl,dt,dd{
+ul,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,table,th,tr,td{
 	margin: 0;
 	padding: 0;
 }
@@ -10,6 +10,11 @@ li{
 }
 a{
 	text-decoration: none;
+}
+button{
+	border:none;
+	outline: none;
+	cursor: pointer;
 }
 
 .box{

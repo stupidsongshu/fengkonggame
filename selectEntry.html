@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>选择投资</title>
+	<title>选择入职</title>
 	<link rel="stylesheet" href="style/lib/normalize.css">
 	<link rel="stylesheet" href="style/common.css">
-	<link rel="stylesheet" href="style/selectInvest.css">
+	<link rel="stylesheet" href="style/selectEntry.css">
 </head>
 <body>
 	<div class="header">
 		<ul class="box clearfix">
-			<li class="logo-l">选择投资</li>
+			<li class="logo-l">选择入职</li>
 			<li class="logo"><img src="images/logo.png"></li>
 			<li class="logo-r"><span>返回首页</span> <img class="arrow" src="images/icon-r.png"></li>
 		</ul>
@@ -22,7 +22,7 @@
 				<div class="mask">
 					<div class="title">公司详情</div>
 					
-					<div class="wrapper">
+					<div class="wrapper clearfix">
 						<div class="pull-left wrapper-l">
 							<div class="content">
 								<ul class="announcement-list">
@@ -60,14 +60,22 @@
 									<input type="text">
 								</li>
 								<li>
-									<span class="name">资本投资 :</span>
-									<input type="text">
+									<span class="name">期望职位 :</span>
+									<select>
+										<option value="0">a</option>
+										<option value="1">b</option>
+										<option value="2">c</option>
+									</select>
+								</li>
+								<li>
+									<button class="btn-submit">确认投资</button>
+								</li>
+								<li>
+									<div class="remark">注：每人只能选择一家公司任职</div>
 								</li>
 							</ul>
 
-							<button class="btn-submit">确认投资</button>
 
-							<span class="remark">剩余投资：xxx万元</span>
 						</div>
 					</div>
 				</div>
