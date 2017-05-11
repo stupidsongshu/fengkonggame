@@ -74,15 +74,23 @@
 	border-radius: 5px;
 	background-color: rgba(0,0,0,.4);
 }
-.banner .box .content-l .mask .swiper-container{
+.banner .box .content-l .mask .wrapper-line{
 	width: 610px;
+	height: 420px;
 	padding: 10px;
 	border:1px solid #a3cd64;
 }
-.banner .box .content-l .mask .swiper-container .swiper-wrapper{
+.banner .box .content-l .mask .swiper-container{
+	width: 590px;
 	height: 400px;
+}
+.banner .box .content-l .mask .swiper-container .swiper-wrapper{
 	background-color: #fff;
 	overflow: hidden;
+}
+.banner .box .content-l .mask .swiper-container .swiper-wrapper .swiper-slide{
+	width:590px;
+	height:400px;
 }
 .banner .box .content-l .mask .swiper-container .swiper-wrapper .swiper-slide .list-t{
 	width: 590px;
@@ -108,7 +116,7 @@
 }
 .banner .box .content-l .mask .swiper-container .swiper-wrapper .swiper-slide .col4{
 	position: relative;
-	width: 220px;
+	width: 222px;
 }
 .banner .box .content-l .mask .swiper-container .swiper-wrapper .swiper-slide .list-c{
 	font-size: 14px;
