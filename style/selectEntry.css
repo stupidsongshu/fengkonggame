@@ -161,8 +161,10 @@
 	font-weight: bold;
 }
 .banner .box .content-l .mask .wrapper .wrapper-r .wrapper-r-list li .btn-submit{
+	display: block;
 	width: 182px;
 	height: 42px;
+	margin: 0 auto;
 	margin-top: 10px;
 	margin-left: 102px;
 	border-radius: 5px;
