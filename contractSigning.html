@@ -23,22 +23,49 @@
 		<div class="up">
 			<div class="box">
 				<div class="title">投、融资合同</div>
-				<div class="info">
-					
+
+				<div class="inner">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="slide-item">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvin tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus m Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien neget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laot. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvi tempor. Cum sociis natoque penatibus et magnis .</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvin tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus m</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slide-item">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvin tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus m Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien neget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laot. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvi tempor. Cum sociis natoque penatibus et magnis .</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvin tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus m</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slide-item">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvin tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus m Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien neget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laot. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvi tempor. Cum sociis natoque penatibus et magnis .</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvin tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus m</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 分页器 -->
+					<div class="swiper-pagination swiper-pagination-h"></div>
 				</div>
 
-				<ul class="clause-number">
-					<li>
-						<h3 class="clause-number-title">请输入您认为存在风险的条款编号</h3>
-						<input class="input" type="text"><i class="plus"></i>
-					</li>
-				</ul>
+				<div class="clause-number">
+					<h3 class="clause-number-title">请输入您认为存在风险的条款编号</h3>
+					<ul class="clause-number-list">
+						<li>
+							<input class="input" type="text"><i class="plus"></i>
+						</li>
+					</ul>
+				</div>
+
 				<div class="btn-groups">
 					<h3>您选择的是：</h3>
 					<button>签订</button>
 					<button>不签</button>
 				</div>
-				<p class="system-news">系统消息提示/结果反馈（您选择签订了合同，恭喜你发现了第X条、第<span class="num">XX</span>条风险，但是还有第<span class="num">XXXX</span>条风险仍未被发现哦）</p>
 
 				<div class="sewing-up-l"></div>
 				<div class="sewing-up-r"></div>
@@ -46,13 +73,21 @@
 				<div class="sewing-down-r"></div>
 			</div>
 		</div>
-
-		<div class="down"></div>
 	</div>
 
 	<div class="announcement">
 		<div class="box">游戏公告：进入投融资阶段</div>
 	</div>
-	
+
+
+	<script>
+		var swiper = new Swiper('.swiper-container',{
+		    mode: 'horizontal',
+	    	pagination: '.swiper-pagination-h',
+	        paginationClickable: true,
+		    grabCursor: true,
+		    loop:true
+	 	});
+	</script>
 </body>
 </html>

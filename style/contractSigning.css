@@ -37,13 +37,12 @@
 
 .content .up{
 	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 62px;
 	background-color: #313131;
 }
-
 .content .up .box{
 	position: relative;
+	padding-top: 20px;
+	padding-bottom: 62px;
 }
 .content .up .box .sewing-up-l{
 	position: absolute;
@@ -52,6 +51,7 @@
 	width: 120px;
 	height: 52px;
 	background-image: url(../images/sewing.png);
+	z-index: 999;
 }
 .content .up .box .sewing-up-r{
 	position: absolute;
@@ -80,33 +80,99 @@
 
 .content .up .box .title{
 	width: 340px;
-	height: 40px;
+	height: 60px;
 	margin: 0 auto;
-	line-height: 40px;
+	line-height: 60px;
 	text-align: center;
-	background: url(../images/riskIdentify-title.png) no-repeat;
 	font-size: 24px;
 	color: #fff;
+	border-radius: 5px;
+	background-color: #4e5152;
 }
-.content .up .info{
+.content .up .inner{
+	position: relative;
 	width: 650px;
-	height: 370px;
 	margin: 0 auto;
 	margin-top: 14px;
-	padding-top: 62px;
 	border-radius: 5px;
-	border-bottom: 1px solid #515151;
+	box-shadow:0 1px #515151;
 	background-color: #272727;
 }
+.swiper-container{
+	width: 100%;
+	height: 370px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .slide-item{
+	padding:36px 60px 0 60px;
+	line-height: 24px;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 12px;
+}
+
+/*自定义分页器*/
+.swiper-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform:translateX(-50%);
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border-radius: 50%;
+  opacity: 0.8;
+  border-top-color: 1px solid #ccc;
+  border-bottom: 1px solid #898b8b;
+  box-shadow: 0 0 0 1px #363738;
+  box-shadow: 0 1px 1px #fff;
+  background-color: #3f4142;
+  cursor: pointer;
+}
+.swiper-active-switch{
+	position: relative;
+}
+.swiper-active-switch:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 10px;
+	height: 10px;
+	margin-top: -5px;
+	margin-left: -5px;
+	border-radius: 50%; 
+  	background: #fff;
+}
+.pagination-nested{
+  bottom: auto;
+  top: 10px;
+}
+.pagination-nested .swiper-pagination-switch {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+
 .content .up .clause-number{
 	width: 340px;
-	height: 80px;
 	margin: 0 auto;
+	margin-top: 42px;
 }
-.content .up .clause-number .clause-number-title{
+.content .up .clause-number-title{
+	color: #fff;
+	font-size: 16px;
+}
+.content .up .clause-number-list{
+	width: 340px;
+}
+.content .up .clause-number-list .clause-number-title{
 	color: #fff;
 }
-.content .up .clause-number .input{
+.content .up .clause-number-list .input{
 	width: 260px;
 	height: 40px;
 	margin-top: 30px;
@@ -117,11 +183,11 @@
 	outline: none;
 	background-color: transparent;
 }
-.content .up .clause-number input::-webkit-input-placeholder{
+.content .up .clause-number-list input::-webkit-input-placeholder{
 	font-size: 12px;
 	color: #b2b0b0;
 }
-.content .up .clause-number .plus{
+.content .up .clause-number-list .plus{
 	display: inline-block;
 	width: 16px;
 	height: 16px;
@@ -130,11 +196,11 @@
 }
 .content .up .btn-groups{
 	width: 346px;
-	height: 40px;
 	margin: 0 auto;
 	margin-top: 20px;
 }
 .content .up .btn-groups h3{
+	line-height: 60px;
 	color: #fff;
 	font-size: 16px;
 }
@@ -146,7 +212,8 @@
 	outline: none;
 	font-size: 20px;
 	color: #fff;
-	background: url(../images/riskIdentify-btn.png) no-repeat;
+	text-shadow:1px 1px #587238;
+	background-color: #9ac762;
 }
 .content .up .system-news{
 	margin-top: 30px;
