@@ -28,27 +28,22 @@
 	vertical-align: -20px;
 }
 
-.banner{
-	width: 100%;
-	height: 270px;
-}
 
 .content{
 	width: 100%;
-	height: 562px;
+	padding: 100px 0 76px 0;
 	background-color: #a5cda1;
 }
 
 .content .up{
 	width: 100%;
-	height: 488px;
+	padding-top: 20px;
+	padding-bottom: 62px;
 	background-color: #313131;
 }
 
 .content .up .box{
-	height: 100%;
 	position: relative;
-	padding-top: 42px;
 }
 .content .up .box .sewing-up-l{
 	position: absolute;
@@ -83,7 +78,7 @@
 	background-image: url(../images/sewing.png);
 }
 
-.content .up .title{
+.content .up .box .title{
 	width: 340px;
 	height: 40px;
 	margin: 0 auto;
@@ -95,54 +90,56 @@
 }
 .content .up .info{
 	width: 650px;
-	height: 300px;
+	height: 370px;
 	margin: 0 auto;
-	margin-top: 40px;
+	margin-top: 14px;
 	padding-top: 62px;
-	border-bottom: 1px solid #515151;
 	border-radius: 5px;
+	border-bottom: 1px solid #515151;
 	background-color: #272727;
 }
-.content .up .info .clause-number{
+.content .up .clause-number{
 	width: 340px;
 	height: 80px;
 	margin: 0 auto;
 }
-.content .up .info .clause-number .clause-number-title{
-	width: 102px;
-	height: 80px;
-	line-height: 80px;
+.content .up .clause-number .clause-number-title{
 	color: #fff;
-	font-size: 18px;
 }
-.content .up .info .clause-number .input{
-	width: 200px;
-	height: 30px;
+.content .up .clause-number .input{
+	width: 260px;
+	height: 40px;
+	margin-top: 30px;
 	padding-left: 8px;
+	color: #fff;
 	border: 1px solid #fff;
-	border-radius: 3px;
+	border-radius: 5px;
 	outline: none;
-	
+	background-color: transparent;
 }
-.content .up .info .clause-number input::-webkit-input-placeholder{
+.content .up .clause-number input::-webkit-input-placeholder{
 	font-size: 12px;
 	color: #b2b0b0;
 }
-.content .up .info .clause-number .plus{
+.content .up .clause-number .plus{
 	display: inline-block;
 	width: 16px;
 	height: 16px;
 	margin-left: 10px;
 	background: url(../images/plus.png) no-repeat;
 }
-.content .up .info .btn-groups{
+.content .up .btn-groups{
 	width: 346px;
 	height: 40px;
 	margin: 0 auto;
-	margin-top: 40px;
+	margin-top: 20px;
 }
-.content .up .info .btn-groups button{
-	width: 160px;
+.content .up .btn-groups h3{
+	color: #fff;
+	font-size: 16px;
+}
+.content .up .btn-groups button{
+	width: 120px;
 	height: 40px;
 	border-radius: 3px;
 	border: none;
@@ -151,13 +148,13 @@
 	color: #fff;
 	background: url(../images/riskIdentify-btn.png) no-repeat;
 }
-.content .up .info .system-news{
+.content .up .system-news{
 	margin-top: 30px;
 	padding: 0 86px;
 	color: #fff;
 	font-size: 16px;
 }
-.content .up .info .system-news .num{
+.content .up .system-news .num{
 	color: #9ac762;
 }
 

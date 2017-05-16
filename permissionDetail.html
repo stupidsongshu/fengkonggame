@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>融资借款</title>
+	<title>权限详情</title>
 	<link rel="stylesheet" href="style/lib/normalize.css">
 	<link rel="stylesheet" href="style/common.css">
-	<link rel="stylesheet" href="style/financingLoan.css">
+	<link rel="stylesheet" href="style/permissionDetail.css">
+	<link rel="stylesheet" href="style/lib/idangerous.swiper.css">
+	<script src="js/lib/jquery-1.12.3.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -18,7 +20,7 @@
 
 	<div class="content">
 		<div class="box clearfix">
-			<div class="pull-left pull-left-l">  
+			<div class="pull-left pull-left-l">
 				<ul>
 					<li class="item first">审批审核 合同结果</li>
 					<li class="item item-sup active"><span class="item-t">企业情况</span></li>
@@ -38,32 +40,50 @@
 			</div>
 
 			<div class="pull-left pull-left-m">
-				<p class="announcement">游戏公告：进入<span>xxx</span>轮</p>
-
 				<div class="wrapper">
-					<div class="pull-left inner-l">
-						<img class="bank-logo" src="images/bank-logo.png">
-						<input class="num" type="text" placeholder="贷款金额">
-						<button class="btn-submit">提交</button>
-
-						<div class="approval-result">
-							<h3 class="approval-result-title">审批结果</h3>
-							<p class="approval-result-content">系统：已完成借款</p>
-						</div>
-						<button class="btn-collection">前往收款</button>
-					</div>
-
-					<div class="pull-left inner-r">
-						<div class="inner-r-wrapper">
-							<div class="loan-interest">
-								<h3 class="loan-title">借款条件及利息规定</h3>
-								<p class="loan-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsanet viverra justo commodo. Proin sodales pulvinar tempor</p>
+					<div class="inner">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="slide-item">
+										<table>
+											<thead>
+												<tr>
+													<th class="th-1">昵称</th>
+													<th class="th-2">职位</th>
+													<th class="th-3">匹配权限</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="td-1">小路飞</td>
+													<td class="td-2">董事长</td>
+													<td class="td-3">人事任免、签订补充协议</td>
+												</tr>
+												<tr>
+													<td class="td-1">小路飞</td>
+													<td class="td-2">总经理</td>
+													<td class="td-3"></td>
+												</tr>
+												<tr>
+													<td class="td-1">小路飞</td>
+													<td class="td-2">采购总监</td>
+													<td class="td-3">采购合同发起、额外采购发起、材料入库</td>
+												</tr>
+												<tr>
+													<td class="td-1">小路飞</td>
+													<td class="td-2">销售总监</td>
+													<td class="td-3">销售合同发起、销售发货</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>						
 							</div>
-							<div class="loan-contract">
-								<h3 class="loan-title">贷款合同</h3>
-								<p class="loan-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsanet viverra justo commodo. Proin sodales pulvinar tempor</p>
-							</div>
 						</div>
+
+						<!-- 分页器 -->
+						<div class="swiper-pagination swiper-pagination-h"></div>
 					</div>
 				</div>
 			</div>
@@ -150,5 +170,17 @@
 			</div>
 		</div>
 	</div>
+
+	
+	<script src="js/lib/idangerous.swiper.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container',{
+		    // mode: 'horizontal',
+	    	// pagination: '.swiper-pagination-h',
+	     	// paginationClickable: true,
+		    // grabCursor: true,
+		    // loop:true
+	 	});
+	</script>
 </body>
 </html>

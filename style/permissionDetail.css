@@ -74,125 +74,61 @@
 }
 
 .content .box .pull-left-m{
-	position: relative;
 	width: 580px;
 	height: 540px;
 	margin: 0 10px;
 }
-.content .box .pull-left-m .announcement{
-	position: absolute;
-	width: 100%;
-	height: 32px;
-	line-height: 32px;
-	padding-left: 40px;
-	font-size: 12px;
-	color: #678c63;
-	border-radius: 3px 3px 0 0;
-	background-color: #a5cda1;
-}
 .content .box .pull-left-m .wrapper{
-	width: 100%;
-	height: 100%;
+	height: 540px;
+	padding-top: 56px;
 	border-radius: 5px;
 	background-color: rgba(0,0,0,.4);
 }
-.content .box .pull-left-m .wrapper .inner-l{
-	width: 280px;
-	height: 100%;
-	padding-top: 62px;
-	border-right: 1px solid #535758;
-}
-.content .box .pull-left-m .wrapper .inner-l .bank-logo{
-	display: block;
-	margin: 0 auto;
-}
-.content .box .pull-left-m .wrapper .inner-l .num{
-	display: block;
-	width: 200px;
-	height: 40px;
-	padding: 5px;
-	margin: 0 auto;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	border:1px solid #fff;
-	border-radius: 3px;
-	outline: none;
-	color: #fff;
-	background-color: transparent;
-}
-.content .box .pull-left-m .wrapper .inner-l .btn-submit{
-	display: block;
-	width: 100px;
-	height: 40px;
+.content .box .pull-left-m .wrapper .inner{
+	width: 520px;
+	height: 420px;
 	margin: 0 auto;
 	border-radius: 3px;
-	color: #fff;
-	font-size: 20px;
-	background-color: #9ac762;
-}
-.content .box .pull-left-m .wrapper .inner-l .approval-result{
-	width: 250px;
-	height: 150px;
-	margin: 28px auto 30px auto;
-	border-radius: 5px;
-	text-align: center;
-	background-color: #fff;
-}
-.content .box .pull-left-m .wrapper .inner-l .approval-result .approval-result-title{
-	line-height: 60px;
-	font-size: 18px;
-}
-.content .box .pull-left-m .wrapper .inner-l .approval-result .approval-result-content{
-	font-size: 14px;
-}
-.content .box .pull-left-m .wrapper .inner-l .btn-collection{
-	display: block;
-	width: 100px;
-	height: 40px;
-	margin:0 auto;
-	color: #fff;
-	font-size: 20px;
-	border-radius: 3px;
-	background-color: #9ac762;
+	border:1px solid #a3cd64;
 }
 
-.content .box .pull-left-m .wrapper .inner-r{
-	width: 300px;
+.swiper-wrapper{
+	width: 100%;
 	height: 100%;
-	padding-top: 130px;
 }
-.content .box .pull-left-m .wrapper .inner-r .inner-r-wrapper{
-	width: 250px;
-	height: 310px;
-	padding-top: 10px;
-	margin: 0 auto;
-	border:1px solid #9ac762;
+.swiper-container .swiper-wrapper .swiper-slide .slide-item{
+	padding: 10px;
+}
+.swiper-container .swiper-wrapper .swiper-slide .slide-item table{
+	border-collapse: collapse;
 	border-radius: 5px;
 }
-.content .box .pull-left-m .wrapper .inner-r .inner-r-wrapper .loan-interest{
-	width: 230px;
-	height: 140px;
-	margin: 0 auto;
-	border-radius: 5px;
-	background-color: #fff;
+.swiper-container .swiper-wrapper .swiper-slide .slide-item th{
+	height: 50px;
+	color: #fff;
+	font-size: 14px;
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #9ac762;
 }
-.content .box .pull-left-m .wrapper .inner-r .inner-r-wrapper .loan-title{
-	line-height: 40px;
-	text-align: center;
-	font-size: 18px;
+.swiper-container .swiper-wrapper .swiper-slide .slide-item th.th-1,
+.swiper-container .swiper-wrapper .swiper-slide .slide-item th.th-2{
+	width: 126px;
 }
-.content .box .pull-left-m .wrapper .inner-r .inner-r-wrapper .loan-content{
-	padding-left: 14px;
+.swiper-container .swiper-wrapper .swiper-slide .slide-item th.th-3{
+	width: 248px;
+	border-right: none;
+}
+.swiper-container .swiper-wrapper .swiper-slide .slide-item td{
+	height: 87px;
 	font-size: 12px;
-	color: #6c6c6c;
-}
-.content .box .pull-left-m .wrapper .inner-r .inner-r-wrapper .loan-contract{
-	width: 230px;
-	height: 140px;
-	margin: 0 auto;
-	margin-top: 10px;
-	border-radius: 5px;
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
 	background-color: #fff;
+	text-align: center;
+}
+.swiper-container .swiper-wrapper .swiper-slide .slide-item td.td-3{
+	border-right: none;
 }
 
 
