@@ -99,6 +99,25 @@
 	border:none;
 	outline: none;
 }
+.banner .box .content-l .mask .list-chairman select{
+	width: 194px;
+	height: 40px;
+	padding: 10px;
+	border-radius: 5px;
+	appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+	background-color: transparent;
+	background: url(../images/selectDown.png) no-repeat scroll right center;
+	background-position: 174px center;
+	color: #fff;
+	border:1px solid #fff;
+	outline: none;
+}
+.banner .box .content-l .mask .list-chairman select option{
+	background-color: #6f7871;
+	padding: 0 10px;
+}
 .banner .box .content-l .mask .list-chairman button.btn-create{
 	width: 182px;
 	height: 40px;

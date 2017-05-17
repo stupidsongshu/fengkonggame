@@ -103,17 +103,7 @@
 	height: 24px;
 	line-height: 24px;
 }
-.banner .box .content-l .mask .wrapper .wrapper-l .content button.btn{
-	width: 100px;
-	height: 30px;
-	margin-left: 44px;
-	margin-top: -5px;
-	border-radius: 5px;
-	color: #fff;
-	border:none;
-	outline: none;
-	cursor: pointer;
-}
+
 .banner .box .content-l .mask .wrapper .wrapper-r{
 	width: 316px;
 	height: 340px;
@@ -174,7 +164,6 @@
 .banner .box .content-l .mask .wrapper .wrapper-r .wrapper-r-list li .remark{
 	width: 100%;
 	height: 20px;
-	margin-top: 70px;
 	color: #fff;
 	font-size: 12px;
 }
