@@ -78,7 +78,6 @@
 	position: relative;
 	width: 500px;
 	height: 400px;
-	padding-top: 170px;
 	margin: 0 auto;
 	border-radius: 5px;
 	background-color: #5c6162;
@@ -89,10 +88,11 @@
 	text-align: center;
 }
 .banner .box .content-l .mask .wrapper .inner .audit-c{
+	display: inline-block;
+	vertical-align: middle;
 	margin-bottom: 32px;
 	font-size: 12px;
 	color: #fff;
-	vertical-align: middle;
 }
 .banner .box .content-l .mask .wrapper .inner .audit-c .num{
 	color: #a3cd64;
@@ -178,7 +178,7 @@
 }
 
 .banner .box .content-r .approval-group{
-	margin-top: 38px;
+	margin: 38px 0;
 }
 .banner .box .content-r .approval-group .approval-nav-icon{
 	width: 250px;

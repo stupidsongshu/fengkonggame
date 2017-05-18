@@ -209,40 +209,12 @@
 	margin: 0 auto;
 	margin-top: 14px;
 	border-radius: 5px;
-	background: url(../images/btn-submit.png) no-repeat;
-	background-size: cover;
 	color: #fff;
 }
 
 /*自定义分页器*/
 .swiper-pagination {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  margin-left: -18px;
-}
-.swiper-pagination-switch {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #afafaf;
-  margin-right: 12px;
-  opacity: 0.8;
-  border: 1px solid #fff;
-  cursor: pointer;
-}
-.swiper-active-switch {
-  background: #d8573f;
-}
-.pagination-nested{
-  bottom: auto;
-  top: 10px;
-}
-.pagination-nested .swiper-pagination-switch {
-  display: block;
-  margin-right: 0;
-  margin-bottom: 5px;
+  bottom: 8px;
 }
 
 
@@ -345,9 +317,6 @@
 	position: absolute;
 	left: 50%;
 	bottom: -44px;
-	/* margin-left: -130px;
-	width: 260px;
-	height: 60px; */
 	width: 270px;
 	height: 70px;
 	margin-left: -135px;
@@ -357,6 +326,7 @@
 	border:none;
 	outline: none;
 	border-radius: 5px;
+	box-shadow: none;
 }
 
 

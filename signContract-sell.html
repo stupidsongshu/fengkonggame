@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>发起签订合同</title>
+	<title>发起签订合同（销售）</title>
 	<link rel="stylesheet" href="style/lib/normalize.css">
 	<link rel="stylesheet" href="style/common.css">
-	<link rel="stylesheet" href="style/signContract.css">
+	<link rel="stylesheet" href="style/signContract-sell.css">
 	<link rel="stylesheet" href="style/lib/idangerous.swiper.css">
 	<script src="js/lib/idangerous.swiper.min.js"></script>
 	<script src="js/lib/jquery-1.12.3.js"></script>
@@ -21,14 +21,18 @@
 
 	<div class="banner">
 		<div class="box">
-			<div class="pull-left content-l">
+			<div class="content">
 				<div class="mask">
-					<div class="nav-title">销售合同</div>
+				<div class="nav-title">
+						<div class="nav-title-l"><a href="approvalAudit.html">审核审批</a></div>
+						<div class="nav-title-m">销售合同</div>
+						<div class="nav-title-r"><a href="contractResult.html?id=1">合同结果</a></div>
+					</div>
 					<div class="contract-number">合同编号：1234567890</div>
 
 					<!-- 前进后退按钮 -->
-					<button class="arrow-left"></button>
-					<button class="arrow-right"></button>
+					<!-- <button class="arrow-left"></button>
+					<button class="arrow-right"></button> -->
 
 					<div class="content-main">
 						<div class="swiper-container">
@@ -45,23 +49,30 @@
 										</p>
 									</div>
 								</div>
+								<div class="swiper-slide">
+									<div class="content-main-info">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscingAenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar <br>
+			         						tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+										</p>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscingAenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar <br>
+			         						tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
 						
-						<button class="btn-submit">提交审核</button>
 
 						<!-- 分页器 -->
 						<div class="swiper-pagination swiper-pagination-h"></div>
 					</div>
+
+					<button class="btn-submit">提交审核</button>
+
 				</div>
-
-				<div class="sewing-valign"></div>
-			</div>
-
-			<div class="pull-right content-r">
-				<div class="btn-step btn-step1">合同结果</div>
-				<div class="btn-step btn-step2">审核审批</div>
-			</div>
+			</div>	
 		</div>
 	</div>
 

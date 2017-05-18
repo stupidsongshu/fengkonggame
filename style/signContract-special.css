@@ -48,101 +48,177 @@
 	position: relative;
 	height: 100%;
 }
-.banner .box .content-l{
+.banner .box .content{
 	position: relative;
-	width: 700px;
-	height: 100%;
-	padding: 46px 50px 0 0; 
-	border-right: 1px solid #fff;
+	padding-top: 88px;
 }
-.banner .box .content-l .mask{
-	width: 650px;
-	height: 650px;
-	padding-top: 70px;
+.banner .box .content .mask{
+	position: relative;
+	width: 920px;
+	padding-top: 40px;
+	padding-bottom: 20px;
 	border-radius: 5px;
 	background-color: rgba(0,0,0,.4);
 }
-.banner .box .content-l .mask .nav-title{
+
+
+.content .mask .nav-title{
+	position: relative;
+	width: 100%;
+}
+.content .mask .nav-title .nav-title-l{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 0 3px 3px 0;
+	border-bottom: 1px solid #d2d7d2;
+	border-left: 1px solid #d25900;
+	box-shadow: 0 -1px #d25900;
+	background-color: #d9721f;
+}
+.content .mask .nav-title .nav-title-m{
 	width: 270px;
 	height: 40px;
 	line-height: 40px;
 	margin: 0 auto;
-	background: url(../images/title-bg2.png) no-repeat;
-	background-size: cover;
-	text-align: center;
 	font-size: 18px;
+	text-indent: 90px;
+	background: url(../images/title-bg2.png) no-repeat;
 }
-.banner .box .content-l .mask .contract-number{
-	height: 60px;
-	line-height: 46px;
+.content .mask .nav-title .nav-title-r{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 3px 0 0 3px;
+	border-bottom: 1px solid #d2d7d2;
+	border-left: 1px solid #d25900;
+	box-shadow: 0 -1px #d25900;
+	background-color: #d9721f;
+}
+
+
+.banner .box .content .mask .contract-number{
+	height: 50px;
+	line-height: 50px;
 	text-align: center;
 	color: #fff;
 	font-size: 14px;
 }
-.banner .box .content-l .mask .content-main{
-	width: 530px;
+
+.banner .box .content .mask .content-main{
+	position: relative;
+	width: 800px;
 	height: 390px;
 	margin: 0 auto;
-	padding: 78px 44px 0 60px;
+	padding: 38px;
 	background-color: #5c6162;
 }
-.banner .box .content-l .mask .content-main .content-main-info{
+.banner .box .content .mask .content-main .swiper-container{
+	width: 100%;
+	height: 100%;
+}
+.banner .box .content .mask .content-main .content-main-info{
 	height: 220px;
 	line-height: 16px;
 	font-size: 12px;
 	color: #fff;
 }
-.banner .box .content-l .mask .content-main .btn-groups{
-	padding-left: 22px;
+
+/*自定义分页器*/
+.swiper-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform:translateX(-50%);
 }
-.banner .box .content-l .mask .content-main .btn-groups .btn-submit{
-	display: inline-block;
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border-radius: 50%;
+  opacity: 0.8;
+  border-top-color: 1px solid #ccc;
+  border-bottom: 1px solid #898b8b;
+  box-shadow: 0 0 0 1px #363738;
+  box-shadow: 0 1px 1px #fff;
+  background-color: #3f4142;
+  cursor: pointer;
+}
+.swiper-active-switch{
+	position: relative;
+}
+.swiper-active-switch:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 10px;
+	height: 10px;
+	margin-top: -5px;
+	margin-left: -5px;
+	border-radius: 50%; 
+  	background: #fff;
+}
+.pagination-nested{
+  bottom: auto;
+  top: 10px;
+}
+.pagination-nested .swiper-pagination-switch {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+
+
+.banner .box .content .mask .btn-submit{
+	display: block;
 	width: 160px;
 	height: 40px;
-	border-radius: 3px;
-	background: url(../images/riskIdentify-btn.png) no-repeat;
-	background-size: cover;
+	margin: 0 auto;
+	margin-top: 20px;
 	color: #fff;
-}
-.banner .box .content-l .mask .content-main .btn-groups .btn-submit-l{
-	margin-right: 44px;
+	border-radius: 3px;
+	background-color:#97c561;
+	box-shadow: 0 1px 2px #373f38,
+				-1px 0 #686f6a,
+				1px 0 #686f6a;
 }
 
 
-.banner .box .content-l .sewing-valign{
+/*前进后退按钮*/
+.arrow-left{
 	position: absolute;
-	width: 120px;
-	height: 52px;
-	top: 232px;
-	right: -60px;
-	background-image: url(../images/sewing.png);
-	transform:rotate(90deg);
+	top: 50%;
+	left: 22px;
+	width: 28px;
+	height: 32px;
+	margin-top: -16px;
+	background: url("../images/arrow-green-l.png") no-repeat;
+	z-index: 9;
 }
-
-.banner .box .content-r{
-	width: 250px;
-	height: 650px;
-	margin-top: 46px;
-	border-radius: 5px;
-	background-color: rgba(0,0,0,.4);
-}
-.banner .box .content-r .btn-step{
-	width: 204px;
-	height: 44px;
-	margin-left: 46px;
-	font-size: 18px;
-	text-indent: 100px;
-	border:1px solid red;
-}
-.banner .box .content-r .btn-step1{
-	margin-top: 256px;
-	margin-bottom: 40px;
-	background: url(../images/btn-step1.png);
-	background-size: cover;
-}
-.banner .box .content-r .btn-step2{
-	background: url(../images/btn-step2.png);
-	background-size: cover;
+.arrow-right{
+	position: absolute;
+	top: 50%;
+	right: 22px;
+	width: 28px;
+	height: 32px;
+	margin-top: -16px;
+	background: url("../images/game-guide-arrow-btn.png") no-repeat;
+	z-index: 9;
 }
 
 
