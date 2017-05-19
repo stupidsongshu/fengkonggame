@@ -79,7 +79,7 @@
 .guide-group .wrapper{
 	position: absolute;
 	left: 50%;
-	bottom: 58px; 
+	bottom: 58px;  
 	width: 1000px;
 	height: 430px;
 	margin-left: -500px;
@@ -91,6 +91,9 @@
 .guide-group .wrapper .swiper-container{
 	width: 100%;
 	height: 100%;
+}
+.guide-group .wrapper .swiper-container .swiper-slide{
+
 }
 .guide-group .wrapper .slide-item{
 	

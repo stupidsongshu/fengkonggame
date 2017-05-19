@@ -21,6 +21,16 @@ button{
 	box-shadow: 0 1px 2px #373f38;
 	text-shadow:2px 2px 2px #5a7439;
 }
+button a{
+	color: #fff;
+}
+input{
+	padding: 5px;
+	outline: none;
+	border:1px solid #a2cb61;
+	box-shadow: inset 1px 0 6px #a39f9e,
+				inset 0 1px 6px #a39f9e;
+}
 
 .box{
 	width: 1000px;
