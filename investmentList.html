@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="fkgame">
 <head>
 	<meta charset="UTF-8">
 	<title>投资列表</title>
 	<link rel="stylesheet" href="style/lib/normalize.css">
 	<link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href="style/header.css">
 	<link rel="stylesheet" href="style/investmentList.css">
 	<link rel="stylesheet" href="style/lib/idangerous.swiper.css">
 	<script src="js/lib/jquery-1.12.3.js"></script>
 	<script src="js/lib/idangerous.swiper.min.js"></script>
+	<script src="js/lib/angular/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/service.js"></script>
+	<script src="js/controller.js"></script>
 </head>
-<body>
-	<div class="header">
-		<ul class="box clearfix">
-			<li class="logo-l">我的投资</li>
-			<li class="logo"><img src="images/logo.png"></li>
-			<li class="logo-r"><span>返回首页</span> <img class="arrow" src="images/icon-r.png"></li>
-		</ul>
-	</div>
+<body ng-controller="InvestmentListCtrl">
+	<div ng-include="'templates/header.html'"></div>
 	
 	<div class="banner">
 		<div class="box">
@@ -113,7 +112,7 @@
 			<div class="sewing-down-l"></div>
 			<div class="sewing-down-r"></div>
 
-			<button class="next-step">下一步</button>
+			<button class="next-step"><a href="staffFeedback.html">下一步</a></button>
 		</div>
 	</div>
 
@@ -125,7 +124,7 @@
 	    	pagination: '.swiper-pagination-h',
 	        paginationClickable: true,
 		    grabCursor: true,
-		    loop:true
+		    loop:false
 	 	});
 	</script>
 </body>

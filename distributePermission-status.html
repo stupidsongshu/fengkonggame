@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="fkgame">
 <head>
 	<meta charset="UTF-8">
 	<title>权限分配（入职状态）</title>
 	<link rel="stylesheet" href="style/lib/normalize.css">
 	<link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href="style/header.css">
 	<link rel="stylesheet" href="style/distributePermission-status.css">
 	<link rel="stylesheet" href="style/lib/idangerous.swiper.css">
 	<script src="js/lib/jquery-1.12.3.js"></script>
 	<script src="js/lib/idangerous.swiper.min.js"></script>
+	<script src="js/lib/angular/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/service.js"></script>
+	<script src="js/controller.js"></script>
 </head>
-<body>
-	<div class="header">
-		<ul class="box clearfix">
-			<li class="logo-l">权限分配</li>
-			<li class="logo"><img src="images/logo.png"></li>
-			<li class="logo-r"><span>返回首页</span> <img class="arrow" src="images/icon-r.png"></li>
-		</ul>
-	</div>
+<body ng-controller="DistributePermissionStatusCtrl">
+	<div ng-include="'templates/header.html'"></div>
 	
 	<div class="banner">
 		<div class="box">
@@ -81,7 +80,10 @@
 					<div class="swiper-pagination swiper-pagination-h"></div>
 				</div>
 
-				<button class="btn-submit">提交</button>
+				<button class="btn-submit">
+					<a href="distributePermission-staff.html" ng-if="role.type == 1">查看权限分配</a>
+					<a href="distributePermission.html" ng-if="role.type == 2">分配员工权限</a>
+				</button>
 
 				<div class="sewing-valign"></div>
 			</div>
@@ -126,8 +128,6 @@
 			
 			<div class="sewing-down-l"></div>
 			<div class="sewing-down-r"></div>
-
-			<button class="next-step">下一步</button>
 		</div>
 	</div>
 

@@ -1,43 +1,3 @@
-.header{
-	position: relative;
-	width: 100%;
-	height: 70px;
-	color:#fff;
-	background-image: url(../images/topnav.png);
-	background-size: 100% 100%;
-	font-size: 18px;
-}
-.header .box{
-	position: relative;
-}
-.header .logo{
-	width: 160px;
-	height: 70px;
-	margin: 0 auto;
-}
-.header .logo-l{
-	position: absolute;
-	top: 20px;
-	left: 0;
-	height: 30px;
-	padding: 0 16px;
-	line-height: 30px;
-	text-align: center;
-	background-color: #3f4143;
-	border-radius: 5px;
-	box-shadow: inset 0 1px 0 rgba(0,0,0,.2),
-				inset 0 -1px 0 rgba(255,255,255,.2);
-}
-.header .logo-r{
-	position: absolute;
-	top: 0;
-	right: 0;
-	line-height: 70px;
-}
-.header .arrow{
-	vertical-align: -20px;
-}
-
 .banner{
 	width: 100%;
 	height: 640px;
@@ -195,27 +155,20 @@
 	border:1px solid #a3cd64;
 	border-radius: 5px;
 	outline: none;
+	box-shadow: none;
 }
 .banner .box .content-l .mask .content .content-main .content-main-r .info .btn-submit{
 	width: 100px;
 	height: 30px;
 	margin-top: 4px;
-	color: #fff;
-	border-radius: 5px;
-	background:url(../images/btn-submit.png) no-repeat;
-	background-size: cover;
 }
 
 .banner .box .content-l .mask .detail{
+	display: block;
 	width: 120px;
 	height: 30px;
 	margin: 0 auto;
 	margin-top: 24px;
-	margin-left: 240px;
-	border-radius: 5px;
-	background: url(../images/btn-submit.png) no-repeat;
-	background-size: cover;
-	color: #fff;
 }
 
 .banner .box .content-l .sewing-valign{
@@ -322,25 +275,6 @@
 	height: 52px;
 	background-image: url(../images/sewing.png);
 }
-
-.banner .box .next-step{
-	position: absolute;
-	left: 50%;
-	bottom: -44px;
-	/* margin-left: -130px;
-	width: 260px;
-	height: 60px; */
-	width: 270px;
-	height: 70px;
-	margin-left: -135px;
-	background: url(../images/next-step-btn.png) no-repeat;
-	color: #fff;
-	font-size: 20px;
-	border:none;
-	outline: none;
-	border-radius: 5px;
-}
-
 
 .footer-bg{
 	width: 100%;

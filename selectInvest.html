@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="fkgame">
 <head>
 	<meta charset="UTF-8">
 	<title>选择投资</title>
 	<link rel="stylesheet" href="style/lib/normalize.css">
 	<link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href="style/header.css">
 	<link rel="stylesheet" href="style/selectInvest.css">
+	<script src="js/lib/angular/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/service.js"></script>
+	<script src="js/controller.js"></script>
 </head>
-<body>
-	<div class="header">
-		<ul class="box clearfix">
-			<li class="logo-l">选择投资</li>
-			<li class="logo"><img src="images/logo.png"></li>
-			<li class="logo-r"><span>返回首页</span> <img class="arrow" src="images/icon-r.png"></li>
-		</ul>
-	</div>
+<body ng-controller="SelectInvestCtrl">
+	<div ng-include="'templates/header.html'"></div>
 	
 	<div class="banner">
 		<div class="box">
@@ -63,7 +62,7 @@
 								</li>
 							</ul>
 
-							<button class="btn-submit">确认投资</button>
+							<button class="btn-submit"><a href="distributeStock.html">确认投资</a></button>
 
 							<span class="remark">剩余投资：xxx万元</span>
 						</div>
@@ -113,8 +112,6 @@
 			
 			<div class="sewing-down-l"></div>
 			<div class="sewing-down-r"></div>
-
-			<button class="next-step"><a href="distributeStock.html">下一步</a></button>
 		</div>
 	</div>
 

@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="fkgame">
 <head>
 	<meta charset="UTF-8">
 	<title>员工招聘、分配职务（董事长）</title>
 	<link rel="stylesheet" href="style/lib/normalize.css">
 	<link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href="style/header.css">
 	<link rel="stylesheet" href="style/staffEmployee.css">
+	<script src="js/lib/angular/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/service.js"></script>
+	<script src="js/controller.js"></script>
 </head>
-<body>
-	<div class="header">
-		<ul class="box clearfix">
-			<li class="logo-l">选择入职</li>
-			<li class="logo"><img src="images/logo.png"></li>
-			<li class="logo-r"><span>返回首页</span> <img class="arrow" src="images/icon-r.png"></li>
-		</ul>
-	</div>
+<body ng-controller="StaffEmployeeCtrl">
+	<div ng-include="'templates/header.html'"></div>
 	
 	<div class="banner">
 		<div class="box">
@@ -99,7 +98,7 @@
 					</div>
 
 					<div>
-						<button class="detail">录用详情</button>
+						<button class="detail"><a href="distributePermission-status.html?type=1">录用详情</a></button>
 					</div>
 				</div>
 
@@ -146,8 +145,6 @@
 			
 			<div class="sewing-down-l"></div>
 			<div class="sewing-down-r"></div>
-
-			<button class="next-step"><a href="distributePermission.html">下一步</a></button>
 		</div>
 	</div>
 

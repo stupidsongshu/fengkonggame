@@ -5,6 +5,7 @@
 	<title>角色选择</title>
 	<link rel="stylesheet" href="style/lib/normalize.css">
 	<link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href="style/header.css">
 	<link rel="stylesheet" href="style/selectRole.css">
 	<script src="js/lib/angular/angular.min.js"></script>
 	<script src="js/app.js"></script>
@@ -12,13 +13,8 @@
 	<script src="js/controller.js"></script>
 </head>
 <body ng-controller="SelectRoleCtrl">
-	<div class="header">
-		<ul class="box clearfix">
-			<li class="logo-l">角色选择</li>
-			<li class="logo"><img src="images/logo.png"></li>
-			<li class="logo-r"><span>返回首页</span> <img class="arrow" src="images/icon-r.png"></li>
-		</ul>
-	</div>
+
+	<div ng-include="'templates/header.html'"></div>
 
 	<div class="banner">
 		<div class="box">
