@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="fkgame">
 <head>
 	<meta charset="UTF-8">
 	<title>发起签订合同（销售）</title>
 	<link rel="stylesheet" href="style/lib/normalize.css">
-	<link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href="style/public/common.css">
+	<link rel="stylesheet" href="style/public/header.css">
 	<link rel="stylesheet" href="style/signContract-sell.css">
 	<link rel="stylesheet" href="style/lib/idangerous.swiper.css">
 	<script src="js/lib/idangerous.swiper.min.js"></script>
 	<script src="js/lib/jquery-1.12.3.js"></script>
+	<script src="js/lib/angular/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/service.js"></script>
+	<script src="js/controller.js"></script>
 </head>
-<body>
-	<div class="header">
-		<ul class="box clearfix">
-			<li class="logo-l">合同详情</li>
-			<li class="logo"><img src="images/logo.png"></li>
-			<li class="logo-r"><span>返回经营页</span> <img class="arrow" src="images/icon-r.png"></li>
-		</ul>
-	</div>
+<body ng-controller="SignContractSellCtrl">
+	<div ng-include="'templates/header.html'"></div>
 
 	<div class="banner">
 		<div class="box">

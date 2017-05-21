@@ -4,7 +4,7 @@
 	color:#fff;
 	background-image: url(../images/topnav.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 }
 .header .box{
 	position: relative;
@@ -85,7 +85,7 @@
 	margin-top: -74px;
 	background-image: url(../images/black-bg.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 	z-index: 2;
 }
 .introduction-game .box{
@@ -223,7 +223,7 @@
 	line-height: 60px;
 	text-align: center;
 	background: url(../images/bg-copy.png) no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 	font-size: 18px;
 	color: #fff;
 }

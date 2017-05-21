@@ -13,21 +13,10 @@
 	<script src="js/service.js"></script>
 	<script src="js/controller.js"></script>
 	<script src="js/lib/jquery-1.12.3.js"></script>
-	<script src="js/modalDialog.js"></script>
-
-	<script>
-		$(function(){
-			$('.btn-submit').click(function(){
-				$('#screen').show();
-				$('#modal-dialog').show();
-			});
-
-			
-		})
-	</script>
 </head>
 <body ng-controller="selectEntryCtrl">
-	<div modal-dialog></div>
+	<!-- <div modal-dialog></div> -->
+	<modal-dialog info="modalDialogInfo"></modal-dialog>
 
 	<div ng-include="'templates/header.html'"></div>
 	
