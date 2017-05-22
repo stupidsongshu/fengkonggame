@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="fkgame">
 <head>
 	<meta charset="UTF-8">
-	<title>合同详情</title>
+	<title>合同详情(销售)</title>
 	<link rel="stylesheet" href="style/lib/normalize.css">
 	<link rel="stylesheet" href="style/public/common.css">
+	<link rel="stylesheet" href="style/public/header.css">
 	<link rel="stylesheet" href="style/contractDetail.css">
 	<link rel="stylesheet" href="style/lib/idangerous.swiper.css">
 	<script src="js/lib/idangerous.swiper.min.js"></script>
+	<script src="js/lib/angular/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/service.js"></script>
+	<script src="js/controller.js"></script>
 </head>
-<body>
-	<div class="header">
-		<ul class="box clearfix">
-			<li class="logo-l">合同详情</li>
-			<li class="logo"><img src="images/logo.png"></li>
-			<li class="logo-r"><span>返回经营页</span> <img class="arrow" src="images/icon-r.png"></li>
-		</ul>
-	</div>
+<body ng-controller="ContractDetailSellCtrl">
+	<div ng-include="'templates/header.html'"></div>
 
 	<div class="content">
 		<div class="mask">
@@ -84,8 +83,8 @@
 			</div>
 
 			<div class="btn-groups">
-				<button class="btn-submit">发起尽调</button>
-				<button class="btn-submit">发起签订</button>
+				<button class="btn-submit" ng-if="role.type == 3">发起尽调</button>
+				<button class="btn-submit" ng-if="role.type == 4">发起签订</button>
 			</div>
 		</div>
 	</div>

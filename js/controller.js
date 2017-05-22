@@ -138,8 +138,33 @@ angular.module('fkgame.controller',['fkgame.services'])
 	}
 }])
 
-//发起签订合同（销售）
-.controller('SignContractSellCtrl',['$scope',function($scope){
+//合同台账(销售)
+.controller('ContractLedgerSellCtrl',['$scope',function($scope){
+	$scope.header = {
+		leftTitle : '合同台账',
+		rightTitle : '返回经营页',
+		rightHide : false
+	}
+}])
+
+//合同详情(销售)
+.controller('ContractDetailSellCtrl',['$scope','GetParams',function($scope,GetParams){
+	$scope.header = {
+		leftTitle : '合同详情',
+		rightTitle : '返回经营页',
+		rightHide : false
+	}
+
+	$scope.role = {};
+	var UrlSearch = new GetParams.UrlSearch();
+	if(UrlSearch.type){
+		$scope.role.type = UrlSearch.type;
+	}
+	
+}])
+
+//发起签订合同（特殊）
+.controller('SignContractSpecialCtrl',['$scope',function($scope){
 	$scope.header = {
 		leftTitle : '合同详情',
 		rightTitle : '返回经营页',
@@ -153,10 +178,19 @@ angular.module('fkgame.controller',['fkgame.services'])
 
 
 
+//合同结果
 .controller('ContractResultCtrl',['$scope','GetParams',function($scope,GetParams){
-	if(location.href){
-		var UrlSearch = new GetParams.UrlSearch();
+	$scope.header = {
+		leftTitle : '合同结果',
+		rightTitle : '返回经营页',
+		rightHide : false
+	}
+	
+	var UrlSearch = new GetParams.UrlSearch();
+	if(UrlSearch.id){
 		$scope.UrlSearchId = UrlSearch.id;
+
 		console.log($scope.UrlSearchId);
 	}
+	
 }])
