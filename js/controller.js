@@ -172,8 +172,29 @@ angular.module('fkgame.controller',['fkgame.services'])
 	}
 }])
 
+//合同台账(采购)
+.controller('ContractLedgerPurchaseCtrl',['$scope',function($scope){
+	$scope.header = {
+		leftTitle : '合同台账',
+		rightTitle : '返回经营页',
+		rightHide : false
+	}
+}])
 
+//合同详情(采购)
+.controller('ContractDetailPurchaseCtrl',['$scope','GetParams',function($scope,GetParams){
+	$scope.header = {
+		leftTitle : '合同详情',
+		rightTitle : '返回经营页',
+		rightHide : false
+	}
 
+	$scope.role = {};
+	var UrlSearch = new GetParams.UrlSearch();
+	if(UrlSearch.type){
+		$scope.role.type = UrlSearch.type;
+	}
+}])
 
 
 
